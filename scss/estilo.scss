@@ -1,0 +1,261 @@
+@import "variables/colores";
+
+*{ 
+    margin: 0;
+    padding: 0;
+    font-size: 1.2rem;    
+    font-family: 'Nunito Sans', sans-serif;
+    box-sizing: border-box;
+}
+section{
+    padding: 2% 10%;
+}
+
+/*-------------------------HEADER--------------------------------*/
+header{ 
+    background: $color-header;    
+    h1{    
+        color: $color-h1;
+        text-align: left;
+        font-family: 'Alice', serif;
+    }
+    .transformScale:hover{
+        color:white;       
+    }
+}
+
+/*-------------------------FOOTER--------------------------------*/
+footer{
+    background-color: $color-footer;
+}
+
+/*-----------------FORMATO DE PAGINA DE CATALOGO-----------------*/
+
+.transformScale:hover{
+    transform: scale(1.3); 
+    transition: all .5s;
+    z-index: 1;
+}
+
+.marcoProducto{ 
+	border: 1px solid $color-grisClaro;
+	margin-bottom: 30px;
+        img {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .infoProducto{  
+        padding: 30px;
+        position: relative;
+        p{
+            font-size: 17px;
+            color: $color-azul;
+            margin-bottom: 20px;
+        }
+        .precioProducto{
+            position: absolute;
+            top: 30px;
+            right: 30px;
+            font-size: 18px;
+            color: black;
+        }
+        .nombreProducto{
+            margin-bottom: 30px;
+            font-size: 25px;
+        }
+        a{
+            position: absolute;
+            right: 30px;
+            bottom: 30px;
+            font-size: 18px;
+            color: $color-verde;
+            text-decoration: none;    
+        }
+        .noDisponible{
+            color: gray;
+        }
+        .sinStock{
+            color: $color-rojo;
+        }
+    }
+}
+
+/*-----------------FORMATO DE PAGINA BLOG------------------------*/
+.notasBlog{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 2%;
+    img{
+        width: 100%;
+    }
+    h2{
+        font-size: 30px;
+        font-weight: 600;
+        margin: 20px 0;
+    }
+    a{
+        color: $color-verde;
+    }
+}
+
+
+/*-----------------FORMATO DE PAGINA DE NOSOTROS-----------------*/
+
+.seccionNosotros {
+	margin-top: 80px;    
+
+    .imagenDerecha img {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .infoIzquierda{
+        span{
+        text-transform: uppercase;
+        font-size: 15px;
+        color: $color-grisOscuro;
+        letter-spacing: 1px;
+        margin-bottom: 10px;
+        display: block;
+        }
+        h2 {
+            font-size: 36px;
+            font-weight: 600;
+            margin-bottom: 35px;
+        }
+        em {
+            font-style: normal;
+            color: $color-verde;
+        }  
+        a:hover{
+            background-color: white;
+            color: $color-verde;
+            border: solid 1px $color-verde;
+            text-decoration: none;
+        }     
+    }
+}
+
+.botonVerde{
+    background-color: $color-verde;
+    color: white;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 12px 30px;
+    border-radius: 30px;
+    display: inline-block;
+    transition: all 0.3s;
+    margin-bottom: 50px;
+    text-decoration: none;
+}
+
+.seccionFondoGris{
+	background-color: $color-fondoGris;
+	margin-top: 100px;	
+	padding-bottom: 100px;
+}
+.tituloEquipo{
+	text-align: center;
+	margin: 80px 0;
+    h2{
+	font-size: 36px;
+	font-weight: 600;
+    }
+}
+.miembroEquipo{
+    img{
+	width: 100%;
+	overflow: hidden;
+    margin-bottom: 20px;
+
+    }
+    .infoEquipo{
+        background-color: white;
+        padding: 30px;
+        h4{
+            font-size: 25px;
+            font-weight: 700;
+            letter-spacing: 0.25px;
+            margin-bottom: 10px;
+        }
+        span{
+            color: $color-verde;
+            font-weight: 600;
+            font-size: 20px;
+            display: block;
+            margin-bottom: 15px;
+        }
+        p{
+            margin-bottom: 20px;
+        }
+    }
+}
+
+/*-----------------FORMATO DE PAGINA DE CONTACTO-----------------*/
+.contactoInfo{
+	margin-top: 50px;
+
+    .contactoItem{
+        padding: 60px 30px;
+        margin-bottom: 30px;
+        background-color: $color-fondoGris;
+        text-align: center;
+        i{
+            color: $color-verde;
+            font-size: 48px;
+            margin-bottom: 40px;
+        }
+        h4{
+            font-size: 20px;
+            font-weight: 700;
+            letter-spacing: 0.25px;
+            margin-bottom: 15px;
+        }
+        p{
+            margin-bottom: 20px;
+        }
+        a{
+            font-weight: 600;
+            color: $color-verde;
+            font-size: 15px;
+        }         
+    }   
+}
+
+.tituloSeccion{
+	text-align: center;
+	margin-bottom: 40px;
+	border-bottom: 1px solid $color-grisClaro;
+    h2{
+        font-size: 28px;
+        font-weight: 600;   
+        margin-bottom: 15px;
+        margin-top: 50px;
+    }
+}
+
+form{
+    width: 70%;
+    margin: auto;
+    input:hover{    
+        border: solid 1px $color-grisOscuro;
+        color: $color-grisOscuro;
+    }
+    .botonVerde{
+        border: none;
+    }
+}
+.form-group{
+    label{
+        color: $color-verde;
+    }    
+}
+
+/*
+    ¡¡¡PARA RETOMAR LA COMPILACION LUEGO DE CERRAR EL PROYECTO!!!
+     1- Entrar a la consola y posicionarme en la carpeta de mi proyecto con el comando cd
+     2- Ejecutar el comando: npm run watch-css. Y listo, sigo programando con SASS 
+
+*/

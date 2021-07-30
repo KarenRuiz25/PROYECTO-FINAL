@@ -1,0 +1,204 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 1.2rem;
+  font-family: 'Nunito Sans', sans-serif;
+  box-sizing: border-box; }
+
+section {
+  padding: 2% 10%; }
+
+/*-------------------------HEADER--------------------------------*/
+header {
+  background: #63bfce; }
+  header h1 {
+    color: #d2eff8;
+    text-align: left;
+    font-family: 'Alice', serif; }
+  header .transformScale:hover {
+    color: white; }
+
+/*-------------------------FOOTER--------------------------------*/
+footer {
+  background-color: #b4b3b3; }
+
+/*-----------------FORMATO DE PAGINA DE CATALOGO-----------------*/
+.transformScale:hover {
+  transform: scale(1.3);
+  transition: all .5s;
+  z-index: 1; }
+
+.marcoProducto {
+  border: 1px solid #eee;
+  margin-bottom: 30px; }
+  .marcoProducto img {
+    width: 100%;
+    overflow: hidden; }
+  .marcoProducto .infoProducto {
+    padding: 30px;
+    position: relative; }
+    .marcoProducto .infoProducto p {
+      font-size: 17px;
+      color: #1a6692;
+      margin-bottom: 20px; }
+    .marcoProducto .infoProducto .precioProducto {
+      position: absolute;
+      top: 30px;
+      right: 30px;
+      font-size: 18px;
+      color: black; }
+    .marcoProducto .infoProducto .nombreProducto {
+      margin-bottom: 30px;
+      font-size: 25px; }
+    .marcoProducto .infoProducto a {
+      position: absolute;
+      right: 30px;
+      bottom: 30px;
+      font-size: 18px;
+      color: #a4c639;
+      text-decoration: none; }
+    .marcoProducto .infoProducto .noDisponible {
+      color: gray; }
+    .marcoProducto .infoProducto .sinStock {
+      color: #fd1919; }
+
+/*-----------------FORMATO DE PAGINA BLOG------------------------*/
+.notasBlog {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding: 2%; }
+  .notasBlog img {
+    width: 100%; }
+  .notasBlog h2 {
+    font-size: 30px;
+    font-weight: 600;
+    margin: 20px 0; }
+  .notasBlog a {
+    color: #a4c639; }
+
+/*-----------------FORMATO DE PAGINA DE NOSOTROS-----------------*/
+.seccionNosotros {
+  margin-top: 80px; }
+  .seccionNosotros .imagenDerecha img {
+    width: 100%;
+    overflow: hidden; }
+  .seccionNosotros .infoIzquierda span {
+    text-transform: uppercase;
+    font-size: 15px;
+    color: #666;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    display: block; }
+  .seccionNosotros .infoIzquierda h2 {
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 35px; }
+  .seccionNosotros .infoIzquierda em {
+    font-style: normal;
+    color: #a4c639; }
+  .seccionNosotros .infoIzquierda a:hover {
+    background-color: white;
+    color: #a4c639;
+    border: solid 1px #a4c639;
+    text-decoration: none; }
+
+.botonVerde {
+  background-color: #a4c639;
+  color: white;
+  font-size: 13px;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 12px 30px;
+  border-radius: 30px;
+  display: inline-block;
+  transition: all 0.3s;
+  margin-bottom: 50px;
+  text-decoration: none; }
+
+.seccionFondoGris {
+  background-color: #f7f7f7;
+  margin-top: 100px;
+  padding-bottom: 100px; }
+
+.tituloEquipo {
+  text-align: center;
+  margin: 80px 0; }
+  .tituloEquipo h2 {
+    font-size: 36px;
+    font-weight: 600; }
+
+.miembroEquipo img {
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 20px; }
+
+.miembroEquipo .infoEquipo {
+  background-color: white;
+  padding: 30px; }
+  .miembroEquipo .infoEquipo h4 {
+    font-size: 25px;
+    font-weight: 700;
+    letter-spacing: 0.25px;
+    margin-bottom: 10px; }
+  .miembroEquipo .infoEquipo span {
+    color: #a4c639;
+    font-weight: 600;
+    font-size: 20px;
+    display: block;
+    margin-bottom: 15px; }
+  .miembroEquipo .infoEquipo p {
+    margin-bottom: 20px; }
+
+/*-----------------FORMATO DE PAGINA DE CONTACTO-----------------*/
+.contactoInfo {
+  margin-top: 50px; }
+  .contactoInfo .contactoItem {
+    padding: 60px 30px;
+    margin-bottom: 30px;
+    background-color: #f7f7f7;
+    text-align: center; }
+    .contactoInfo .contactoItem i {
+      color: #a4c639;
+      font-size: 48px;
+      margin-bottom: 40px; }
+    .contactoInfo .contactoItem h4 {
+      font-size: 20px;
+      font-weight: 700;
+      letter-spacing: 0.25px;
+      margin-bottom: 15px; }
+    .contactoInfo .contactoItem p {
+      margin-bottom: 20px; }
+    .contactoInfo .contactoItem a {
+      font-weight: 600;
+      color: #a4c639;
+      font-size: 15px; }
+
+.tituloSeccion {
+  text-align: center;
+  margin-bottom: 40px;
+  border-bottom: 1px solid #eee; }
+  .tituloSeccion h2 {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    margin-top: 50px; }
+
+form {
+  width: 70%;
+  margin: auto; }
+  form input:hover {
+    border: solid 1px #666;
+    color: #666; }
+  form .botonVerde {
+    border: none; }
+
+.form-group label {
+  color: #a4c639; }
+
+/*
+    ¡¡¡PARA RETOMAR LA COMPILACION LUEGO DE CERRAR EL PROYECTO!!!
+     1- Entrar a la consola y posicionarme en la carpeta de mi proyecto con el comando cd
+     2- Ejecutar el comando: npm run watch-css. Y listo, sigo programando con SASS 
+
+*/
