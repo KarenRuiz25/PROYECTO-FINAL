@@ -1,327 +1,286 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!--SEO-->
-    <title>SucuWorld - Blog</title>
-    <meta name="description"
-        content="En nuestro Blog podes encontrar diferentes notas sobre todos los cuidados que necesitan tus suculentas, desde el sustrato adecuado, frecuencia de riego, plagas, consejos y mucho mas.">
-    <meta name="keywords" content="SUCULENTA, SUCULENTAS, VIVERO, ESPECIES, CUIDADOS, SUSTRATO, RIEGO, PLAGAS, MACETAS">
+        <!--SEO-->
+        <title>SucuWorld - Blog</title>
+        <meta name="description" content="En nuestro Blog podes encontrar diferentes notas sobre todos los cuidados que necesitan tus suculentas, desde el sustrato adecuado, frecuencia de riego, plagas, consejos y mucho mas.">
+        <meta name="keywords" content="SUCULENTA, SUCULENTAS, VIVERO, ESPECIES, CUIDADOS, SUSTRATO, RIEGO, PLAGAS, MACETAS">
 
-    <!--TIPOGRAFIAS LINKEADAS DE GOOGLEFONTS-->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Alice&family=Baloo+Paaji+2:wght@500&family=Lora:ital@1&family=Mate+SC&family=Nunito+Sans&family=Patrick+Hand+SC&display=swap"
-        rel="stylesheet">
+        <!--TIPOGRAFIAS LINKEADAS DE GOOGLEFONTS-->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Alice&family=Baloo+Paaji+2:wght@500&family=Lora:ital@1&family=Mate+SC&family=Nunito+Sans&family=Patrick+Hand+SC&display=swap" rel="stylesheet">
 
-    <!--LINK DE ARCHIVO NORMALIZE-->
-    <link rel="stylesheet" href="css/normalize.css">
+        <!--LINK DE ARCHIVO NORMALIZE-->
+        <link rel="stylesheet" href="css/normalize.css">
 
-    <!--LINK DE ANIMATE-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+        <!--CDN DE BOOTSTRAP-->
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-    <!--CDN DE BOOTSTRAP-->
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <!--CDN ICONOS DE BOOTSTRAP-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
 
-    <!--CDN ICONOS DE BOOTSTRAP-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+        <!--LINK DEL ARCHIVO CSS-->
+        <link rel="stylesheet" href="css/estilo.css">
+    </head>
 
-    <!--LINK DEL ARCHIVO CSS-->
-    <link rel="stylesheet" href="css/estilo.css">
-</head>
+    <body>
 
-<body>
+        <!--ENCABEZADO-->
+        <header>
 
-    <!--ENCABEZADO-->
-    <header>
+            <!--UBICACION Y REDES-->
+            <div class="d-flex flex-wrap container ">
 
-        <!--UBICACION Y REDES-->
-        <div class="d-flex flex-wrap container ">
+                <a class="ubicacion link-dark" href="#">La Rioja, Argentina</a>
 
-            <a class="ubicacion link-dark" href="#">La Rioja, Argentina</a>
+                <ul class="nav ml-auto">
+                    <li class="nav-item">
+                        <a href="" class="nav-link link-dark px-2 transformScale">
+                            <i class="bi bi-facebook" role="img" aria-label="Facebook"></i>
+                        </a>
+                    </li>
 
-            <ul class="nav ml-auto">
-                <li class="nav-item">
-                    <a href="" class="nav-link link-dark px-2 transformScale">
-                        <i class="bi bi-facebook" role="img" aria-label="Facebook"></i>
-                    </a>
-                </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link link-dark px-2 transformScale">
+                            <i class="bi bi-instagram" role="img" aria-label="Instagram"></i>
+                        </a>
+                    </li>
 
-                <li class="nav-item">
-                    <a href="" class="nav-link link-dark px-2 transformScale">
-                        <i class="bi bi-instagram" role="img" aria-label="Instagram"></i>
-                    </a>
-                </li>
-
-                <li class="nav-item">
-                    <a href="https://api.whatsapp.com/send?phone=SucuWorld"
-                        class="nav-link link-dark px-2 transformScale">
-                        <i class="bi bi-whatsapp" role="img" aria-label="Whatsapp"></i>
-                    </a>
-                </li>
-            </ul>
-
-        </div>
-
-        <!--MENU PRINCIPAL-->
-        <nav class="container navbar navbar-expand-lg navbar-dark sticky-top">
-            <div class="container-fluid">
-
-                <a class="navbar-brand" href="index.html">
-                    <h1>SucuWorld</h1>
-                </a>
-
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ml-auto mb-2 mb-lg-0 ">
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html">Inicio</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="catalogo.html">Catálogo</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="blog.html">Blog</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="nosotros.html">Nosotros</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="contacto.html">Contacto</a>
-                        </li>
-                    </ul>
-                </div>
-
+                    <li class="nav-item">
+                        <a href="https://api.whatsapp.com/send?phone=SucuWorld"
+                            class="nav-link link-dark px-2 transformScale">
+                            <i class="bi bi-whatsapp" role="img" aria-label="Whatsapp"></i>
+                        </a>
+                    </li>
+                </ul>
             </div>
-        </nav>
-    </header>
 
-    <main>
-        <!--NOTA 1-->
+            <!--MENU PRINCIPAL-->
+            <nav class="container navbar navbar-expand-lg navbar-dark sticky-top">
+                <div class="container-fluid">
 
-        <div class="container mt-5">
+                    <a class="navbar-brand" href="index.html">
+                        <h1>SucuWorld</h1>
+                    </a>
 
-            <div class="row g-5 contenidoNotas">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
 
-                <div class="col-md-9">
-                    
-                    <div class="tituloSeccion ">
-                        <h2 class="mt-0">Como elegir la maceta adecuada</h2>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ml-auto mb-2 mb-lg-0 ">
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Inicio</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="catalogo.html">Catálogo</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="blog.html">Blog</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="nosotros.html">Nosotros</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="contacto.html">Contacto</a>
+                            </li>
+                        </ul>
                     </div>
-          
+
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            
+            <div class="container mt-5">
+
+                <div class="row g-5 contenidoNotas">
+
+                    <!--CONTENIDO DE LA NOTA-->
+                    <div class="col-md-9">
+
+                        <div class="tituloSeccion ">
+                            <h2 class="mt-0">Como elegir la maceta adecuada</h2>
+                        </div>
 
                         <p class="lead text-center"> Te enseñamos a identificar las macetas ideales segun la especie y segun el clima en el que las tengas. </p>
 
                         <div class="overflow-hidden" style="max-height: 40vh;">
                             <div class="container px-5">
-                                <img src="imagenes/nota2.jpg" class="img-fluid border rounded-3 shadow-lg mt-4"
-                                    alt="Transplante" width="100%" loading="lazy">
+                                <img src="imagenes/nota2.jpg" class="img-fluid border rounded-3 shadow-lg mt-4" alt="Transplante" width="100%" loading="lazy">
                             </div>
                         </div>
 
-
-
-                        <p> Incluso la planta más vigorosa pierde parte de su encanto si está colocada en un recipiente inadecuado. Un ejemplo típico lo proporciona el arte del bonsái, en el que las macetas cumplen un papel primordial; se deben escoger con mucha atención para que armonicen con la planta y formen un conjunto equilibrado. Pero también en el caso de las plantas de interior normales, una maceta adecuada a tu ambiente es importante, ya que posee la capacidad de transformar la planta en un auténtico elemento decorativo.
-
+                        <p> Incluso la planta más vigorosa pierde parte de su encanto si está colocada en un recipiente
+                            inadecuado. Un ejemplo típico lo proporciona el arte del bonsái, en el que las macetas cumplen
+                            un papel primordial; se deben escoger con mucha atención para que armonicen con la planta y
+                            formen un conjunto equilibrado. Pero también en el caso de las plantas de interior normales, una
+                            maceta adecuada a tu ambiente es importante, ya que posee la capacidad de transformar la planta
+                            en un auténtico elemento decorativo.
                         </p>
 
-                        <p>Normalmente, la elección de la maceta va ligada más a criterios prácticos y funcionales que a la estética. La maceta, de hecho, corre el riesgo de romperse en el momento del trasplante; por lo tanto, es aconsejable elegir los tipos más económicos; además, las plantas se venden en recipientes de plástico para agilizar el transporte y no siempre es oportuno trasplantar la planta justo después de adquirirla. Por ello, la solución más práctica es adoptar maceteros donde se pueda introducir la maceta escondiéndola de la vista. </p>
+                        <p>Normalmente, la elección de la maceta va ligada más a criterios prácticos y funcionales que a la
+                            estética. La maceta, de hecho, corre el riesgo de romperse en el momento del trasplante; por lo
+                            tanto, es aconsejable elegir los tipos más económicos; además, las plantas se venden en
+                            recipientes de plástico para agilizar el transporte y no siempre es oportuno trasplantar la
+                            planta justo después de adquirirla. Por ello, la solución más práctica es adoptar maceteros
+                            donde se pueda introducir la maceta escondiéndola de la vista. 
+                        </p>
 
                         <h3>Algunos Tips</h3>
 
-                        <p>La maceta no debe ser tan profunda. Las raíces de las suculentas y los cactus son bastante superficiales, entonces no es mucha la profundidad de tiesto que van a necesitar. Inclusive, los tiestos más llanos les son beneficiosos ya que no acumulan agua . Recuerda que mientras más profundo el tiesto más tierra llevará y más posibilidades de acumular excesos de humedad. </p>
+                        <p>La maceta no debe ser tan profunda. Las raíces de las suculentas y los cactus son bastante
+                            superficiales, entonces no es mucha la profundidad de tiesto que van a necesitar. Inclusive, los
+                            tiestos más llanos les son beneficiosos ya que no acumulan agua . Recuerda que mientras más
+                            profundo el tiesto más tierra llevará y más posibilidades de acumular excesos de humedad. 
+                        </p>
 
-                        <p>Hay que tener en cuenta que un error común a la hora de plantar cactus en el jardín es plantarlos demasiado juntos. Es importante recordar que aunque muchas de estas plantas tienen un crecimiento bastante lento, algunas especies como el Agave pueden crecer a tamaños descomunales. Entones antes de plantar, infórmate sobre el tamaño final al que pueden llegar tus plantas y evita plantarlas demasiado cerca de caminos o lugares de mucho paso.</p>
+                        <p>Hay que tener en cuenta que un error común a la hora de plantar cactus en el jardín es plantarlos
+                            demasiado juntos. Es importante recordar que aunque muchas de estas plantas tienen un
+                            crecimiento bastante lento, algunas especies como el Agave pueden crecer a tamaños descomunales.
+                            Entones antes de plantar, infórmate sobre el tamaño final al que pueden llegar tus plantas y
+                            evita plantarlas demasiado cerca de caminos o lugares de mucho paso.
+                        </p>
 
-                        <p> Son muchas las opciones de diseños y materiales para alcanzar esa maceta adecuada a tu ambiente, ¡solamente debemos encontrar la más adecuada para nuestra planta y el espacio que deseamos decorar!.
+                        <p> Son muchas las opciones de diseños y materiales para alcanzar esa maceta adecuada a tu ambiente,
+                            ¡solamente debemos encontrar la más adecuada para nuestra planta y el espacio que deseamos
+                            decorar!.
                         </p>
 
                         <p>Esperamos que esta información te haya sido de ayuda, te invitamos a visitar nuestro <a href="catalogo.html">Catálogo</a>.</p>
 
+                    </div>
 
-                        
-                        
+                    <!--STICKY DERECHO-->
+                    <div class="col-md-3 stickyDerecho">
 
+                        <div class="position-sticky" style="top: 2rem;">
 
+                            <div class="p-3 mb-3 bg-light rounded">
 
+                                <h4 class="fst-italic">Etiquetas</h4>
 
+                                <button class="btn-sm botonEtiqueta mt-3">Macetas</button>
+                                <button class="btn-sm botonEtiqueta mt-3">Barro</button>
+                                <button class="btn-sm botonEtiqueta mt-3">Ceramica</button>
+                                <button class="btn-sm botonEtiqueta mt-3">Drenaje</button>
+                                <button class="btn-sm botonEtiqueta mt-3">Ambiente</button>
 
+                            </div>
+
+                            <div class="p-3 ">
+
+                                <h4 class="fst-italic">Otras entradas</h4>
+
+                                <a href="nota_1.html">¿Cuando plantar?</a>
+                                <img src="imagenes/nota1.jpg" alt="" style="width: 100%">
+                                <p>Hace 3 dias.</p>
+
+                                <a href="blog.html" class="volver">Volver al Blog</a>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--SECCION DE LOS COMENTARIOS-->
+                    <h3>Comentarios</h3>
+                    <section class="container col-md-9 ml-0 mt-1 comentarios">
+
+                        <div id="disqus_thread"></div>
+                        <script>
+                            var disqus_config = function () {
+                                this.page.url = "https://karenruiz25.github.io/PROYECTO-FINAL/index.html";
+                                this.page.identifier = SucuWorld;
+                            };
+                            (function () {
+                                var d = document,
+                                    s = d.createElement('script');
+                                s.src = 'https://sucuworld.disqus.com/embed.js';
+                                s.setAttribute('data-timestamp', +new Date());
+                                (d.head || d.body).appendChild(s);
+                            })();
+                        </script>
+                        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                    </section>
+
+                </div>
+
+            </div>
+
+        </main>
+
+        <!--FOOTER-->
+        <footer>
+            <div class="container pt-4">
+                <div class="row">
+                    <div class="col-md-4 col-4 mt-4">
+                        <h5>Sucuworld</h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2"><a href="index.html" class="nav-link p-0 link-dark">Inicio</a></li>
+                            <li class="nav-item mb-2"><a href="catalogo.html" class="nav-link p-0 link-dark">Catalogo</a></li>
+                            <li class="nav-item mb-2"><a href="blog.html" class="nav-link p-0 link-dark">Blog</a></li>
+                            <li class="nav-item mb-2"><a href="nosotros.html" class="nav-link p-0 link-dark">Nosotros</a></li>
+                            <li class="nav-item mb-2"><a href="contacto.html" class="nav-link p-0 link-dark">Contacto</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-4 col-6 mt-4">
+                        <h5>Contáctanos</h5>
+                        <a href="mailto:contacto@sucuworld.com" class="link-dark">contacto@sucuworld.com</a>
+
+                        <h5 class="mt-4">Seguinos en:</h5>
+                        <ul class="nav ml-auto redes">
+                            <li class="nav-item">
+                                <a href="#" class="nav-link link-dark px-2 transformScale">
+                                    <i class="bi bi-facebook" role="img" aria-label="Facebook"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link link-dark px-2 transformScale">
+                                    <i class="bi bi-instagram" role="img" aria-label="Instagram"></i>
+                                </a>
+                            </li>
+                        </ul>
+
+                    </div>
+
+                    <div class="col-md-4 mt-4">
+                        <h5>Suscríbete al newsletter</h5>
+                        <p>Recibí las ultimas entradas al catálogo y enterate de las nuevas notas de nuestro Blog.</p>
+                        <div class="d-flex w-100 gap-2">
+                            <label for="newsletter" class="visually-hidden">Correo electrónico</label>
+                            <input type="email" id="email" class="form-control" placeholder="Email">
+                            <button class="btn botonTurquesaLight">Suscribirse</button>
+                        </div>
+                    </div>
                     
-
-
-
-
-
-
                 </div>
 
-
-                <div class="col-md-3 stickyDerecho">
-
-                    <div class="position-sticky" style="top: 2rem;">
-
-                        <!-- <div class="p-4 mb-3 bg-light rounded">
-                            <h4 class="fst-italic"><a href="catalogo.html">Blog</a></h4>
-                            <p class="mb-0">Semanalmente escribimos una nueva nota para que aprendas mas sobre las suculentas.</p>
-                            
-                        </div> -->
-
-                        <div class="p-3 mb-3 bg-light rounded">
-
-                            <h4 class="fst-italic">Etiquetas</h4>
-
-                            <button class="btn-sm botonEtiqueta mt-3">Macetas</button>
-                            <button class="btn-sm botonEtiqueta mt-3">Barro</button>
-                            <button class="btn-sm botonEtiqueta mt-3">Ceramica</button>
-                            <button class="btn-sm botonEtiqueta mt-3">Drenaje</button>
-                            <button class="btn-sm botonEtiqueta mt-3">Ambiente</button>
-
-                        </div>
-
-                        <div class="p-3 ">
-
-                            <h4 class="fst-italic">Otras entradas</h4>
-
-                            <a href="nota_1.html">¿Cuando plantar?</a>
-                            <img src="imagenes/nota1.jpg" alt="" style="width: 100%">
-                            <p>Hace 3 dias.</p>
-
-                            <a href="blog.html" class="volver">Volver al Blog</a>
-
-                        </div>
-
-
-                    </div>
+                <div class="container justify-content-between py-3 mt-4 border-top">
+                    <p class="text-center text-muted">© 2021 Sucuworld. Todos los derechos reservados | Karen Ruiz </p>
                 </div>
-
-                <h3>Comentarios</h3>
-                <section class="container col-md-9 ml-0 mt-1 comentarios">
-
-                            <div id="disqus_thread"></div>
-                            <script>
-                                /**
-                                 *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-                                 *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
-                                /*
-                                var disqus_config = function () {
-                                this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-                                this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-                                };
-                                */
-                                (function () { // DON'T EDIT BELOW THIS LINE
-                                    var d = document,
-                                        s = d.createElement('script');
-                                    s.src = 'https://sucuworld.disqus.com/embed.js';
-                                    s.setAttribute('data-timestamp', +new Date());
-                                    (d.head || d.body).appendChild(s);
-                                })();
-                            </script>
-                            <noscript>Please enable JavaScript to view the <a
-                                    href="https://disqus.com/?ref_noscript">comments powered
-                                    by
-                                    Disqus.</a></noscript>
-                                    
-                        </section>
-
-
 
             </div>
+        </footer>
 
+        <!--CDN SCRIPT DE JAVASCRIPT-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+        </script>
 
-
-
-
-
-
-
-
-        </div>
-
-
-
-
-
-
-
-    </main>
-
-    <!--FOOTER-->
-    <footer>
-        <div class="container pt-4">
-            <div class="row">
-                <div class="col-md-4 col-4 mt-4">
-                    <h5>Sucuworld</h5>
-                    <ul class="nav flex-column">
-                        <li class="nav-item mb-2"><a href="index.html" class="nav-link p-0 link-dark">Inicio</a></li>
-                        <li class="nav-item mb-2"><a href="catalogo.html" class="nav-link p-0 link-dark">Catalogo</a>
-                        </li>
-                        <li class="nav-item mb-2"><a href="blog.html" class="nav-link p-0 link-dark">Blog</a></li>
-                        <li class="nav-item mb-2"><a href="nosotros.html" class="nav-link p-0 link-dark">Nosotros</a>
-                        </li>
-                        <li class="nav-item mb-2"><a href="contacto.html" class="nav-link p-0 link-dark">Contacto</a>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="col-md-4 col-6 mt-4">
-                    <h5>Contáctanos</h5>
-                    <a href="mailto:contacto@sucuworld.com" class="link-dark">contacto@sucuworld.com</a>
-
-                    <h5 class="mt-4">Seguinos en:</h5>
-                    <ul class="nav ml-auto redes">
-                        <li class="nav-item">
-                            <a href="#" class="nav-link link-dark px-2 transformScale">
-                                <i class="bi bi-facebook" role="img" aria-label="Facebook"></i>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link link-dark px-2 transformScale">
-                                <i class="bi bi-instagram" role="img" aria-label="Instagram"></i>
-                            </a>
-                        </li>
-                    </ul>
-
-                </div>
-
-                <div class="col-md-4 mt-4">
-                    <h5>Suscríbete al newsletter</h5>
-                    <p>Recibí las ultimas entradas al catálogo y enterate de las nuevas notas de nuestro Blog.</p>
-                    <div class="d-flex w-100 gap-2">
-                        <label for="newsletter" class="visually-hidden">Correo electrónico</label>
-                        <input type="email" id="email" class="form-control" placeholder="Email">
-                        <button class="btn botonTurquesaLight">Suscribirse</button>
-                    </div>
-
-                </div>
-            </div>
-
-            <div class="container justify-content-between py-3 mt-4 border-top">
-                <p class="text-center text-muted">© 2021 Sucuworld. Todos los derechos reservados | Karen Ruiz </p>
-            </div>
-
-        </div>
-    </footer>
-
-    <!--CDN SCRIPT DE JAVASCRIPT-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
-    </script>
-
-</body>
+    </body>
 
 </html>

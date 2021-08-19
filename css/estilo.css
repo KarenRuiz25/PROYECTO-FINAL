@@ -13,15 +13,15 @@ section {
   border: 2px solid #63bfce;
   transition: all 0.3s; }
 
+.botonTurquesaLight:hover {
+  background-color: #63bfce;
+  color: white;
+  transition: all 0.3s; }
+
 .botonTraslucido {
   background-color: rgba(245, 245, 245, 0.712);
   font-weight: 500;
   color: black;
-  transition: all 0.3s; }
-
-.botonTurquesaLight:hover {
-  background-color: #63bfce;
-  color: white;
   transition: all 0.3s; }
 
 .botonVerde {
@@ -46,7 +46,7 @@ section {
   text-align: center;
   margin-bottom: 1rem;
   border-bottom: 1px solid #eee;
-  font-family: 'Nunito Sans', sans-serif; }
+  font-family: "Nunito Sans", sans-serif; }
   .tituloSeccion h2 {
     font-size: 1.8rem;
     font-weight: 600;
@@ -57,7 +57,7 @@ section {
 header {
   background: #63bfce;
   font-size: 1.4rem;
-  font-family: 'Nunito Sans', sans-serif; }
+  font-family: "Nunito Sans", sans-serif; }
   header .ubicacion {
     font-size: 1.2rem;
     text-decoration: none;
@@ -66,7 +66,7 @@ header {
     color: #d2eff8;
     color: white;
     text-align: left;
-    font-family: 'Alice', serif; }
+    font-family: "Alice", serif; }
   header .transformScale:hover {
     color: white; }
 
@@ -81,8 +81,8 @@ footer {
 
 /*----------------------FORMATO DE PAGINA DE INICIO-----------------------*/
 .carousel h3 {
-  font-size: 1.8rem;
-  font-family: 'Nunito Sans', sans-serif;
+  font-size: 1.9rem;
+  font-family: "Nunito Sans", sans-serif;
   font-weight: bold; }
 
 .carousel p {
@@ -102,7 +102,7 @@ footer {
     color: #a4c639; }
 
 .seccionAsesoramiento h3 {
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: "Nunito Sans", sans-serif;
   font-size: 1.5rem;
   font-weight: 600; }
 
@@ -114,7 +114,7 @@ footer {
   color: white;
   border-radius: 10px; }
   .tarjetasEspecies h2 {
-    font-family: 'Nunito Sans', sans-serif;
+    font-family: "Nunito Sans", sans-serif;
     font-weight: 800;
     text-shadow: black 1px 2px; }
   .tarjetasEspecies a {
@@ -138,7 +138,7 @@ footer {
   text-align: center;
   margin-bottom: 25px;
   border-bottom: 1px solid #eee;
-  font-family: 'Nunito Sans', sans-serif; }
+  font-family: "Nunito Sans", sans-serif; }
   .tituloCatalogo h2 {
     font-size: 1.8rem;
     font-weight: 600;
@@ -176,7 +176,8 @@ footer {
       font-weight: 450;
       text-decoration: none;
       border: 1px solid #a4c639;
-      margin-top: 20px; }
+      margin-top: 20px;
+      transition: all 0.3s; }
     .marcoProducto .infoProducto .botonComprar:hover {
       transform: scale(1.1);
       transition: all .5s;
@@ -209,7 +210,7 @@ footer {
     font-size: 1.8rem;
     font-weight: 600;
     margin: 20px 0;
-    font-family: 'Nunito Sans', sans-serif; }
+    font-family: "Nunito Sans", sans-serif; }
   .notasBlog p {
     font-weight: 1.1rem; }
   .notasBlog a {
@@ -227,7 +228,7 @@ footer {
     font-size: 1.1rem; }
   .contenidoNotas h3 {
     font-size: 1.5rem;
-    font-family: 'Nunito Sans', sans-serif;
+    font-family: "Nunito Sans", sans-serif;
     font-weight: 600;
     margin-top: 40px;
     color: #63bfce; }
@@ -242,10 +243,13 @@ footer {
   .contenidoNotas .stickyDerecho a {
     text-decoration: none;
     color: black;
-    font-family: 'Nunito Sans', sans-serif;
+    font-family: "Nunito Sans", sans-serif;
     font-size: 1.2rem; }
   .contenidoNotas .stickyDerecho a:hover {
     font-weight: 600; }
+  .contenidoNotas .stickyDerecho img {
+    border-top: solid 1px #eee;
+    padding-top: 10px; }
   .contenidoNotas .stickyDerecho p {
     margin-top: 0px;
     font-size: 1rem;
@@ -277,11 +281,11 @@ footer {
     font-size: 2.2rem;
     font-weight: 600;
     margin-bottom: 35px;
-    font-family: 'Alice', serif; }
+    font-family: "Alice", serif; }
   .seccionNosotros .infoIzquierda em {
     font-style: normal;
     color: #a4c639;
-    font-family: 'Nunito Sans', sans-serif;
+    font-family: "Nunito Sans", sans-serif;
     font-size: 1.6rem; }
   .seccionNosotros .infoIzquierda p {
     font-size: 1.1rem; }
@@ -344,23 +348,6 @@ form {
   font-size: 1.1rem; }
   form label {
     color: #a4c639; }
-
-.botonComprar {
-  position: absolute;
-  right: 25px;
-  bottom: 1px;
-  font-size: 1rem;
-  background-color: white;
-  color: #a4c639;
-  font-weight: 450;
-  text-decoration: none;
-  border: 1px solid #a4c639;
-  margin-top: 20px;
-  transition: all 0.3s; }
-
-.botonComprar:hover {
-  transform: scale(1.1);
-  transition: all .5s; }
 
 /*
     ¡¡¡PARA RETOMAR LA COMPILACION LUEGO DE CERRAR EL PROYECTO!!!
