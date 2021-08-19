@@ -11,6 +11,9 @@
         content="En nuestro catalogo podes ver todas las variedades con las que contamos y su disponibilidad en nuestra tienda fisica">
     <meta name="keywords" content="SUCULENTA, SUCULENTAS, VIVERO, CATALOGO, ESPECIES, VARIEDADES">
 
+    <!--LINK DE ARCHIVO NORMALIZE-->
+    <link rel="stylesheet" href="css/normalize.css">
+
     <!--TIPOGRAFIAS LINKEADAS DE GOOGLEFONTS-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link
@@ -40,23 +43,23 @@
         <!--UBICACION Y REDES-->
         <div class="d-flex flex-wrap container ">
 
-            <a class="navbar-brand link-dark" href="#">La Rioja, Argentina</a>
+            <a class="ubicacion link-dark" href="">La Rioja, Argentina</a>
 
             <ul class="nav ml-auto">
                 <li class="nav-item">
-                    <a href="#" class="nav-link link-dark px-2 transformScale">
+                    <a href="" class="nav-link link-dark px-2 transformScale">
                         <i class="bi bi-facebook" role="img" aria-label="Facebook"></i>
                     </a>
                 </li>
 
                 <li class="nav-item">
-                    <a href="#" class="nav-link link-dark px-2 transformScale">
+                    <a href="" class="nav-link link-dark px-2 transformScale">
                         <i class="bi bi-instagram" role="img" aria-label="Instagram"></i>
                     </a>
                 </li>
 
                 <li class="nav-item">
-                    <a href="#" class="nav-link link-dark px-2 transformScale">
+                    <a href="https://api.whatsapp.com/send?phone=SucuWorld" class="nav-link link-dark px-2 transformScale">
                         <i class="bi bi-whatsapp" role="img" aria-label="Whatsapp"></i>
                     </a>
                 </li>
@@ -65,7 +68,7 @@
         </div>
 
         <!--MENU PRINCIPAL-->
-        <nav class="container navbar navbar-expand-lg navbar-dark sticky-top">
+        <nav class="container navbar navbar-expand-lg navbar-dark">
             <div class="container-fluid">
 
                 <a class="navbar-brand" href="index.html">
@@ -82,11 +85,11 @@
                     <ul class="navbar-nav ml-auto mb-2 mb-lg-0 ">
 
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                            <a class="nav-link" href="index.html">Inicio</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="catalogo.html">Catalogo</a>
+                            <a class="nav-link active" aria-current="page" href="catalogo.html">Catálogo</a>
                         </li>
 
                         <li class="nav-item">
@@ -108,209 +111,1205 @@
     </header>
 
     <main>
-        <section class="container">
 
-            <div class="row grid">
+        <div class="container mt-5">
 
-                <!--PRODUCTO 1-->
-                <div class="col-lg-4 col-md-4 all des">
-                    <div class="marcoProducto">
+            <div class="row">
 
-                        <img src="imagenes/sedum 1.jpg" class="card-img-top" alt="Sedum Lilacino">
-
-                        <div class="infoProducto">
-                            <p>Disponible</p>
-                            <p class="precioProducto">$200</p>
-                            <h3 class="nombreProducto">Sedum Lilacino</h3>
-                            <a class="transformScale" href="">Comprar</a>
+                <div class="col-md-3 menuCatalogo">
+                    <div class="position-sticky" style="top: 2rem;">
+                        <div class="p-4 mb-3 bg-light rounded">
+                            <h4 class="fst-italic"><a href="catalogo.html">Catálogo</a></h4>
+                            <p class="mb-0">Descubri por especie todos los ejemplares que tenemos disponibles. </p>
+                            <!-- <button class="btn-sm botonTurquesaLight mt-3">Suscribirse</button> -->
+                            
                         </div>
 
-                    </div>
-                </div>
-
-                <!--PRODUCTO 2-->
-                <div class="col-lg-4 col-md-4 all dev">
-                    <div class="marcoProducto">
-
-                        <img src="imagenes/cactus 2.jpg" class="card-img-top " alt="Cactus Bayeri">
-
-                        <div class="infoProducto">
-                            <p>Disponible</p>
-                            <p class="precioProducto">$150</p>
-                            <h3 class="nombreProducto">Cactus Bayeri</h3>
-                            <a class="transformScale" href="">Comprar</a>
-                        </div>
-
-                    </div>
-                </div>
-
-                <!--PRODUCTO 3-->
-                <div class="col-lg-4 col-md-4 all gra">
-                    <div class="marcoProducto">
-
-                        <img src="imagenes/crasas.jpg" class="card-img-top" alt="Echeveria Cepegia">
-
-                        <div class="infoProducto">
-                            <p class="sinStock">Sin Stock</p>
-                            <p class="precioProducto">$220</p>
-                            <h3 class="nombreProducto">Echeveria Cepegia</h3>
-                            <a class="noDisponible" href="">Comprar</a>
+                        <div class="p-4 ">
+                            <h4 class="fst-italic">Especies</h4>
+                            <ol class="list-unstyled mb-0">
+                                <li><a href="#echeverias" class="especies">Echeverias</a></li>
+                                <li><a href="#cactus" class="especies">Cactus</a></li>
+                                <li><a href="#sedums" class="especies">Sedums</a></li>
+                                <li><a href="#haworthias" class="especies">Haworthias</a></li>
+                                <li><a href="#aeoniums" class="especies">Aeoniums</a></li>
+                                <li><a href="#agavoides" class="especies">Agavoides</a></li>
+                                <li><a href="#kalanchoes" class="especies">Kalanchoes</a></li>
+                            </ol>
                         </div>
                     </div>
                 </div>
 
-                <!--PRODUCTO 4-->
-                <div class="col-lg-4 col-md-4 all gra">
-                    <div class="marcoProducto">
-                        <img src="imagenes/aeonium.jpg" class="card-img-top " alt="Aeonium Arboreum">
 
-                        <div class="infoProducto">
-                            <p>Disponible</p>
-                            <p class="precioProducto">$180</p>
-                            <h3 class="nombreProducto">Aeonium Arboreum</h3>
-                            <a class="transformScale" href="">Comprar</a>
+                <div class="col-md-9">
+
+                    <!------------------------ECHEVERIAS----------------------->
+                    <div class="tituloCatalogo">
+                        <h2 id="echeverias">Echeverias</h2>
+                    </div>
+
+                    <!-- <h2 id="echeverias" class="tituloCatalogo">Echeverias</h2>                     -->
+
+                    <div class="row row-cols-2 row-cols-sm-2 row-cols-lg-3 g-3">
+
+                        <!--ECHEVERIA 1-->
+                        <div class="col">
+                            <div class="marcoProducto">
+
+                                <img src="imagenes/echeveria_cepegia.jpg" class="card-img-top" alt="Echeveria Cepegia">
+
+                                <div class="infoProducto">
+
+                                    <div class="d-flex flex-nowrap">
+                                        <p>Disponible</p>
+                                        <p class="precioProducto ml-auto">$250</p>                                      
+                                    </div>                                    
+                                    
+                                    <h3 class="nombreProducto">Echeveria Cepegia</h3>
+
+                                    <div class="d-flex flex-nowrap ml-auto">
+                                        <button class="btn-sm botonComprar">Comprar</button>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!--ECHEVERIA 2-->
+                        <div class="col">
+                            <div class="marcoProducto">
+                                <img src="imagenes/echeveria_peacockii.jpg" class="card-img-top"
+                                    alt="Echeveria Peacockii">
+
+                                <div class="infoProducto">
+
+                                    <div class="d-flex flex-nowrap">
+                                        <p>Disponible</p>
+                                        <p class="precioProducto ml-auto">$390</p>                             
+                                    </div>                                    
+                                    
+                                    <h3 class="nombreProducto">Echeveria Peacockii</h3>
+                                    <button class="btn-sm botonComprar">Comprar</button>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                        <!--ECHEVERIA 3-->
+                        <div class="col">
+                            <div class="marcoProducto">
+                                <img src="imagenes/echeveria_cubic_pallida.jpg" class="card-img-top"
+                                    alt="Echeveria Cubic Pallida">
+
+                                <div class="infoProducto">
+
+                                    <div class="d-flex flex-nowrap">
+                                        <p class="sinStock">Sin Stock</p>
+                                        <p class="precioProducto ml-auto">$320</p>                                     
+                                    </div>                                    
+                                    
+                                    <h3 class="nombreProducto">Echeveria Cubic Pallid</h3>
+                                    <button class="btn-sm botonNoDisponible">Comprar</button>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!--ECHEVERIA 4-->
+                        <div class="col">
+                            <div class="marcoProducto">
+                                <img src="imagenes/echeveria_xichuensis.jpg" class="card-img-top"
+                                    alt="Echeveria Xichuensis">
+
+                                <div class="infoProducto">
+
+                                    <div class="d-flex flex-nowrap">
+                                        <p>Disponible</p>
+                                        <p class="precioProducto ml-auto">$400</p>                                      
+                                    </div>                                    
+                                    
+                                    <h3 class="nombreProducto">Echeveria Xichuensis</h3>
+                                    <button class="btn-sm botonComprar">Comprar</button>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!--ECHEVERIA 5-->
+                        <div class="col">
+                            <div class="marcoProducto">
+                                <img src="imagenes/echeveria_cubic_frost.jpg" class="card-img-top"
+                                    alt="Echeveria Cubic Frost">
+
+                                <div class="infoProducto">
+
+                                    <div class="d-flex flex-nowrap">
+                                        <p>Disponible</p>
+                                        <p class="precioProducto ml-auto">$320</p>                                      
+                                    </div>                                    
+                                    
+                                    <h3 class="nombreProducto">Echeveria Cubic Frost</h3>
+                                    <button class="btn-sm botonComprar">Comprar</button>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!--ECHEVERIA 6 -->
+                        <div class="col">
+                            <div class="marcoProducto">
+                                <img src="imagenes/echeveria_black_prince_2.jpg" class="card-img-top"
+                                    alt="Echeveria Black Prince">
+
+                                <div class="infoProducto flex">
+                                    
+                                    <div class="d-flex flex-nowrap">
+                                        <p>Disponible</p>
+                                        <p class="precioProducto ml-auto">$200</p>                                      
+                                    </div>
+
+                                    <h3 class="nombreProducto">Echeveria Black Prince</h3>
+                                    <button class="btn-sm botonComprar">Comprar</button>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!--ECHEVERIA  7-->
+                        <div class="col">
+                            <div class="marcoProducto">
+                                <img src="imagenes/echeveria_rain_drops.jpg" class="card-img-top"
+                                    alt="Echeveria Rain Drops">
+
+                                <div class="infoProducto">
+                                    
+                                    <div class="d-flex flex-nowrap">
+                                        <p>Disponible</p>
+                                        <p class="precioProducto ml-auto">$560</p>                                      
+                                    </div>
+
+                                    <h3 class="nombreProducto">Echeveria Rain Drops</h3>
+                                    <button class="btn-sm botonComprar">Comprar</button>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!--ECHEVERIA  8-->
+                        <div class="col">
+                            <div class="marcoProducto">
+                                <img src="imagenes/echeveria_pulidonis.jpg" class="card-img-top"
+                                    alt="Echeveria Pullidonis">
+
+                                <div class="infoProducto">
+                                    
+                                    <div class="d-flex flex-nowrap">
+                                        <p class="sinStock">Sin Stock</p>
+                                        <p class="precioProducto ml-auto">$320</p>                                      
+                                    </div>
+
+                                    <h3 class="nombreProducto">Echeveria Pullidonis</h3>
+                                    <button class="btn-sm botonNoDisponible">Comprar</button>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!--ECHEVERIA  9-->
+                        <div class="col">
+                            <div class="marcoProducto">
+                                <img src="imagenes/echeveria_perle_von.jpg" class="card-img-top"
+                                    alt="Echeveria Perle Von">
+
+                                <div class="infoProducto">
+                                    
+                                    <div class="d-flex flex-nowrap">
+                                        <p>Disponible</p>
+                                        <p class="precioProducto ml-auto">$270</p>                                      
+                                    </div>
+
+                                    <h3 class="nombreProducto">Echeveria Perle Von</h3>
+                                    <button class="btn-sm botonComprar">Comprar</button>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+
+                    </div>
+
+
+                    <!--------------------------CACTUS------------------------>
+                    <div class="tituloCatalogo mt-5">
+                        <h2 id="cactus">Cactus</h2>
+                    </div>
+
+                    <div class="row row-cols-2 row-cols-sm-2 row-cols-lg-3 g-3">
+
+                        <!--CACTUS 1-->
+                        <div class="col">
+                            <div class="marcoProducto">
+
+                                <img src="imagenes/cactus_aylostera.jpg" class="card-img-top " alt="Cactus Aylostera">
+
+                                <div class="infoProducto">
+                                    
+                                    <div class="d-flex flex-nowrap">
+                                        <p class="sinStock">Sin Stock</p>
+                                        <p class="precioProducto ml-auto">$250</p>                                      
+                                    </div>
+
+                                    <h4 class="nombreProducto">Cactus Aylostera</h4>
+                                    <button class="btn-sm botonNoDisponible">Comprar</button>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!--CACTUS 2-->
+                        <div class="col">
+                            <div class="marcoProducto">
+
+                                <img src="imagenes/cactus_cereus.jpg" class="card-img-top" alt="Cactus Cereus">
+
+                                <div class="infoProducto">
+                                    
+                                    <div class="d-flex flex-nowrap">
+                                        <p>Disponible</p>
+                                        <p class="precioProducto ml-auto">$350</p>                                      
+                                    </div>
+
+                                    <h3 class="nombreProducto">Cactus Cereus</h3>
+                                    <button class="btn-sm botonComprar">Comprar</button>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!--CACTUS 3-->
+                        <div class="col">
+                            <div class="marcoProducto">
+
+                                <img src="imagenes/cactus_gracilis.jpg" class="card-img-top" alt="Cactus Gracilis">
+
+                                <div class="infoProducto">
+                                    
+                                    <div class="d-flex flex-nowrap">
+                                        <p>Disponible</p>
+                                        <p class="precioProducto ml-auto">$260</p>                                      
+                                    </div>
+
+                                    <h3 class="nombreProducto">Cactus Gracilis</h3>
+                                    <button class="btn-sm botonComprar">Comprar</button>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!--CACTUS 4-->
+                        <div class="col">
+                            <div class="marcoProducto">
+
+                                <img src="imagenes/cactus_mammillaria.jpg" class="card-img-top"
+                                    alt="Cactus Mammillaria">
+
+                                <div class="infoProducto">
+                                    
+                                    <div class="d-flex flex-nowrap">
+                                        <p>Disponible</p>
+                                        <p class="precioProducto ml-auto">$410</p>                                      
+                                    </div>
+
+                                    <h3 class="nombreProducto">Cactus Mammillaria</h3>
+                                    <button class="btn-sm botonComprar">Comprar</button>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!--CACTUS 5-->
+                        <div class="col">
+                            <div class="marcoProducto">
+
+                                <img src="imagenes/cactus_microhellia.jpg" class="card-img-top"
+                                    alt="Cactus Microhellia">
+
+                                <div class="infoProducto">
+                                    <div class="d-flex flex-nowrap">
+                                        <p class="sinStock">Sin Stock</p>
+                                        <p class="precioProducto ml-auto">$450</p>                                      
+                                    </div>
+                                    <h3 class="nombreProducto">Cactus Microhellia</h3>
+                                    <button class="btn-sm botonNoDisponible">Comprar</button>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!--CACTUS 6-->
+                        <div class="col">
+                            <div class="marcoProducto">
+
+                                <img src="imagenes/cactus_spiralis.jpg" class="card-img-top" alt="Cactus Spiralis">
+
+                                <div class="infoProducto">
+                                    <div class="d-flex flex-nowrap">
+                                        <p class="sinStock">Sin Stock</p>
+                                        <p class="precioProducto ml-auto">$500</p>                                      
+                                    </div>
+                                    <h3 class="nombreProducto">Cactus Spiralis</h3>
+                                    <button class="btn-sm botonNoDisponible">Comprar</button>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!--CACTUS 7-->
+                        <div class="col">
+                            <div class="marcoProducto">
+
+                                <img src="imagenes/cactus_zeilmanniana.jpg" class="card-img-top"
+                                    alt="Cactus Zeilmanniana">
+
+                                <div class="infoProducto">
+                                    <div class="d-flex flex-nowrap">
+                                        <p>Disponible</p>
+                                        <p class="precioProducto ml-auto">$450</p>                                      
+                                    </div>
+                                    <h3 class="nombreProducto">Cactus Zeilmanniana</h3>
+                                    <button class="btn-sm botonComprar">Comprar</button>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!--CACTUS 8-->
+                        <div class="col">
+                            <div class="marcoProducto">
+
+                                <img src="imagenes/cactus_astrophytum.jpg" class="card-img-top"
+                                    alt="Cactus Astrophytum">
+
+                                <div class="infoProducto">
+                                    <div class="d-flex flex-nowrap">
+                                        <p class="sinStock">Sin Stock</p>
+                                        <p class="precioProducto ml-auto">$340</p>                                      
+                                    </div>
+                                    <h3 class="nombreProducto">Cactus Astrophytum</h3>
+                                    <button class="btn-sm botonNoDisponible">Comprar</button>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!--CACTUS 9-->
+                        <div class="col">
+                            <div class="marcoProducto">
+
+                                <img src="imagenes/cactus_bayeri.jpg" class="card-img-top" alt="Cactus Bayeri">
+
+                                <div class="infoProducto">
+                                    <div class="d-flex flex-nowrap">
+                                        <p>Disponible</p>
+                                        <p class="precioProducto ml-auto">$200</p>                                      
+                                    </div>
+                                    <h3 class="nombreProducto">Cactus Bayeri</h3>
+                                    <button class="btn-sm botonComprar">Comprar</button>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!--CACTUS 10-->
+                        <div class="col">
+                            <div class="marcoProducto">
+
+                                <img src="imagenes/cactus_opuntia.jpg" class="card-img-top" alt="Cactus Opuntia">
+
+                                <div class="infoProducto">
+                                    <div class="d-flex flex-nowrap">
+                                        <p>Disponible</p>
+                                        <p class="precioProducto ml-auto">$190</p>                                      
+                                    </div>
+                                    <h3 class="nombreProducto">Cactus Opuntia</h3>
+                                    <button class="btn-sm botonComprar">Comprar</button>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!--CACTUS 11-->
+                        <div class="col">
+                            <div class="marcoProducto">
+
+                                <img src="imagenes/cactus_rebutia.jpg" class="card-img-top" alt="Cactus Rebutia">
+
+                                <div class="infoProducto">
+                                    <div class="d-flex flex-nowrap">
+                                        <p>Disponible</p>
+                                        <p class="precioProducto ml-auto">$450</p>                                      
+                                    </div>
+                                    <h3 class="nombreProducto">Cactus Rebutia</h3>
+                                    <button class="btn-sm botonComprar">Comprar</button>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!--------------------------SEDUMS------------------------>
+                    <div class="tituloCatalogo mt-5">
+                        <h2 id="sedums">Sedums</h2>
+                    </div>
+
+                    <div class="row row-cols-2 row-cols-sm-2 row-cols-lg-3 g-3">
+
+                        <!--SEDUM 1-->
+                        <div class="col">
+                            <div class="marcoProducto">
+
+                                <img src="imagenes/sedum_craigii.jpg" class="card-img-top" alt="Sedum Craigii">
+
+                                <div class="infoProducto">
+                                    <div class="d-flex flex-nowrap">
+                                        <p>Disponible</p>
+                                        <p class="precioProducto ml-auto">$400</p>                                      
+                                    </div>
+                                    <h4 class="nombreProducto">Sedum Craigii</h4>
+                                    <button class="btn-sm botonComprar">Comprar</button>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!--SEDUM 2-->
+                        <div class="col">
+                            <div class="marcoProducto">
+
+                                <img src="imagenes/sedum_rowleyanus.jpg" class="card-img-top" alt="Sedum Rowleyanus">
+
+                                <div class="infoProducto">
+                                    <div class="d-flex flex-nowrap">
+                                        <p>Disponible</p>
+                                        <p class="precioProducto ml-auto">$210</p>                                      
+                                    </div>
+                                    <h3 class="nombreProducto">Sedum Rowleyanus</h3>
+                                    <button class="btn-sm botonComprar">Comprar</button>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!--SEDUM 3-->
+                        <div class="col">
+                            <div class="marcoProducto">
+
+                                <img src="imagenes/sedum_dasyphyllum.jpg" class="card-img-top" alt="Sedum Dasyphyllum">
+
+                                <div class="infoProducto">
+                                    <div class="d-flex flex-nowrap">
+                                        <p>Disponible</p>
+                                        <p class="precioProducto ml-auto">$390</p>                                      
+                                    </div>
+                                    <h3 class="nombreProducto">Sedum Dasyphyllum</h3>
+                                    <button class="btn-sm botonComprar">Comprar</button>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!--SEDUM 4-->
+                        <div class="col">
+                            <div class="marcoProducto">
+
+                                <img src="imagenes/sedum_craigii_variegado.jpg" class="card-img-top"
+                                    alt="Sedum Craigii Variegado">
+
+                                <div class="infoProducto">
+                                    <div class="d-flex flex-nowrap">
+                                        <p class="sinStock">Sin Stock</p>
+                                        <p class="precioProducto ml-auto">$580</p>                                      
+                                    </div>
+                                    <h3 class="nombreProducto">Sedum Craigii Variegado</h3>
+                                    <button class="btn-sm botonNoDisponible">Comprar</button>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!--SEDUM 5-->
+                        <div class="col">
+                            <div class="marcoProducto">
+
+                                <img src="imagenes/sedum_lilacino.jpg" class="card-img-top" alt="Sedum Lilacino">
+
+                                <div class="infoProducto">
+                                    <div class="d-flex flex-nowrap">
+                                        <p>Disponible</p>
+                                        <p class="precioProducto ml-auto">$450</p>                                      
+                                    </div>
+                                    <h3 class="nombreProducto">Sedum Lilacino</h3>
+                                    <button class="btn-sm botonComprar">Comprar</button>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!--SEDUM 6-->
+                        <div class="col">
+                            <div class="marcoProducto">
+
+                                <img src="imagenes/sedum_firestorm.jpg" class="card-img-top" alt="Sedum Firestorm">
+
+                                <div class="infoProducto">
+                                    <div class="d-flex flex-nowrap">
+                                        <p>Disponible</p>
+                                        <p class="precioProducto ml-auto">$330</p>                                      
+                                    </div>
+                                    <h3 class="nombreProducto">Sedum Firestorm</h3>
+                                    <button class="btn-sm botonComprar">Comprar</button>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!--SEDUM 7-->
+                        <div class="col">
+                            <div class="marcoProducto">
+
+                                <img src="imagenes/sedum_hernandezii.jpg" class="card-img-top" alt="Sedum Hernandezii">
+
+                                <div class="infoProducto">
+                                    <div class="d-flex flex-nowrap">
+                                        <p>Disponible</p>
+                                        <p class="precioProducto ml-auto">$180</p>                                      
+                                    </div>
+                                    <h3 class="nombreProducto">Sedum Hernandezii</h3>
+                                    <button class="btn-sm botonComprar">Comprar</button>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!--SEDUM 8-->
+                        <div class="col">
+                            <div class="marcoProducto">
+
+                                <img src="imagenes/sedum_jellybean.jpg" class="card-img-top" alt="Sedum Jellybean">
+
+                                <div class="infoProducto">
+                                    <div class="d-flex flex-nowrap">
+                                        <p>Disponible</p>
+                                        <p class="precioProducto ml-auto">$200</p>                                      
+                                    </div>
+                                    <h3 class="nombreProducto">Sedum Jellybean</h3>
+                                    <button class="btn-sm botonComprar">Comprar</button>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!--SEDUM 9-->
+                        <div class="col">
+                            <div class="marcoProducto">
+
+                                <img src="imagenes/sedum_major.jpg" class="card-img-top" alt="Sedum Major">
+
+                                <div class="infoProducto">
+                                    <div class="d-flex flex-nowrap">
+                                        <p>Disponible</p>
+                                        <p class="precioProducto ml-auto">$270</p>                                      
+                                    </div>
+                                    <h3 class="nombreProducto">Sedum Major</h3>
+                                    <button class="btn-sm botonComprar">Comprar</button>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!--SEDUM 10-->
+                        <div class="col">
+                            <div class="marcoProducto">
+
+                                <img src="imagenes/sedum_makinoi.jpg" class="card-img-top" alt="Sedum Makinoi">
+
+                                <div class="infoProducto">
+                                    <div class="d-flex flex-nowrap">
+                                        <p>Disponible</p>
+                                        <p class="precioProducto ml-auto">$210</p>                                      
+                                    </div>
+                                    <h3 class="nombreProducto">Sedum Makinoi</h3>
+                                    <button class="btn-sm botonComprar">Comprar</button>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!--SEDUM 11-->
+                        <div class="col">
+                            <div class="marcoProducto">
+
+                                <img src="imagenes/sedum_pachyphyllum.jpg" class="card-img-top"
+                                    alt="Sedum Pachyphyllum">
+
+                                <div class="infoProducto">
+                                    <div class="d-flex flex-nowrap">
+                                        <p>Disponible</p>
+                                        <p class="precioProducto ml-auto">$200</p>                                      
+                                    </div>
+                                    <h3 class="nombreProducto">Sedum Pachyphyllum</h3>
+                                    <button class="btn-sm botonComprar">Comprar</button>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!--SEDUM 12-->
+                        <div class="col">
+                            <div class="marcoProducto">
+
+                                <img src="imagenes/sedum_rubrotinctum.jpg" class="card-img-top"
+                                    alt="Sedum Rubrotinctum">
+
+                                <div class="infoProducto">
+                                    <div class="d-flex flex-nowrap">
+                                        <p>Disponible</p>
+                                        <p class="precioProducto ml-auto">$200</p>                                      
+                                    </div>
+                                    <h3 class="nombreProducto">Sedum Rubrotinctum</h3>
+                                    <button class="btn-sm botonComprar">Comprar</button>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!--------------------------HAWORTHIAS------------------------>
+
+                    <div class="tituloCatalogo mt-5">
+                        <h2 id="haworthias">Haworthias</h2>
+                    </div>
+
+                    <div class="row row-cols-2 row-cols-sm-2 row-cols-lg-3 g-3">
+
+                        <!--HAWORTHIA 1-->
+                        <div class="col">
+                            <div class="marcoProducto">
+
+                                <img src="imagenes/haworthia_atenuata.jpg" class="card-img-top"
+                                    alt="Haworthia Atenuata">
+
+                                <div class="infoProducto">
+                                    <div class="d-flex flex-nowrap">
+                                        <p>Disponible</p>
+                                        <p class="precioProducto ml-auto">$450</p>                                      
+                                    </div>
+                                    <h4 class="nombreProducto">Haworthia Atenuata</h4>
+                                    <button class="btn-sm botonComprar">Comprar</button>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!--HAWORTHIA 2-->
+                        <div class="col">
+                            <div class="marcoProducto">
+
+                                <img src="imagenes/haworthia_coarctata.jpg" class="card-img-top"
+                                    alt="Haworthia Coarctata">
+
+                                <div class="infoProducto">
+                                    <div class="d-flex flex-nowrap">
+                                        <p>Disponible</p>
+                                        <p class="precioProducto ml-auto">$180</p>                                      
+                                    </div>
+                                    <h4 class="nombreProducto">Haworthia Coarctata</h4>
+                                    <button class="btn-sm botonComprar">Comprar</button>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!--HAWORTHIA 3-->
+                        <div class="col">
+                            <div class="marcoProducto">
+
+                                <img src="imagenes/haworthia_retusa.jpg" class="card-img-top" alt="Haworthia Retusa">
+
+                                <div class="infoProducto">
+                                    <div class="d-flex flex-nowrap">
+                                        <p>Disponible</p>
+                                        <p class="precioProducto ml-auto">$300</p>                                      
+                                    </div>
+                                    <h4 class="nombreProducto">Haworthia Retusa</h4>
+                                    <button class="btn-sm botonComprar">Comprar</button>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!--HAWORTHIA 4-->
+                        <div class="col">
+                            <div class="marcoProducto">
+
+                                <img src="imagenes/haworthia_lilaceae.jpg" class="card-img-top"
+                                    alt="Haworthia Lilaceae">
+
+                                <div class="infoProducto">
+                                    <div class="d-flex flex-nowrap">
+                                        <p>Disponible</p>
+                                        <p class="precioProducto ml-auto">$450</p>                                      
+                                    </div>
+                                    <h4 class="nombreProducto">Haworthia Lilaceae</h4>
+                                    <button class="btn-sm botonComprar">Comprar</button>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!--HAWORTHIA 5-->
+                        <div class="col">
+                            <div class="marcoProducto">
+
+                                <img src="imagenes/haworthia_retusa_black.jpg" class="card-img-top"
+                                    alt="Haworthia Retusa Black">
+
+                                <div class="infoProducto">
+                                    <div class="d-flex flex-nowrap">
+                                        <p>Disponible</p>
+                                        <p class="precioProducto ml-auto">$375</p>                                      
+                                    </div>
+                                    <h4 class="nombreProducto">Haworthia Black</h4>
+                                    <button class="btn-sm botonComprar">Comprar</button>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!--HAWORTHIA 6-->
+                        <div class="col">
+                            <div class="marcoProducto">
+
+                                <img src="imagenes/haworthia_cooperi.jpg" class="card-img-top" alt="Haworthia Cooperi">
+
+                                <div class="infoProducto">
+                                    <div class="d-flex flex-nowrap">
+                                        <p class="sinStock">Sin Stock</p>
+                                        <p class="precioProducto ml-auto">$480</p>                                      
+                                    </div>
+                                    <h4 class="nombreProducto">Haworthia Cooperi</h4>
+                                    <button class="btn-sm botonNoDisponible">Comprar</button>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!--------------------------AEONIUMS------------------------>
+                    <div class="tituloCatalogo mt-5">
+                        <h2 id="aeoniums">Aeoniums</h2>
+                    </div>
+
+                    <div class="row row-cols-2 row-cols-sm-2 row-cols-lg-3 g-3">
+
+                        <!--AEONIUM 1-->
+                        <div class="col">
+                            <div class="marcoProducto">
+
+                                <img src="imagenes/aeonium_arboreum.jpg" class="card-img-top" alt="Aeonium Arboreum">
+
+                                <div class="infoProducto">
+                                    <div class="d-flex flex-nowrap">
+                                        <p>Disponible</p>
+                                        <p class="precioProducto ml-auto">$450</p>                                      
+                                    </div>
+                                    <h4 class="nombreProducto">Aeonium Arboreum</h4>
+                                    <button class="btn-sm botonComprar">Comprar</button>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!--AEONIUM 2-->
+                        <div class="col">
+                            <div class="marcoProducto">
+
+                                <img src="imagenes/aeonium_kiwi_variegado.jpg" class="card-img-top"
+                                    alt="Aeonium Kiwi Variegado">
+
+                                <div class="infoProducto">
+                                    <div class="d-flex flex-nowrap">
+                                        <p>Disponible</p>
+                                        <p class="precioProducto ml-auto">$305</p>                                      
+                                    </div>
+                                    <h4 class="nombreProducto">Aeonium Kiwi Variegado</h4>
+                                    <button class="btn-sm botonComprar">Comprar</button>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!--AEONIUM 3-->
+                        <div class="col">
+                            <div class="marcoProducto">
+
+                                <img src="imagenes/aeonium_aureum.jpg" class="card-img-top" alt="Aeonium Aureum">
+
+                                <div class="infoProducto">
+                                    <div class="d-flex flex-nowrap">
+                                        <p>Disponible</p>
+                                        <p class="precioProducto ml-auto">$450</p>                                      
+                                    </div>
+                                    <h4 class="nombreProducto">Aeonium Aureum</h4>
+                                    <button class="btn-sm botonComprar">Comprar</button>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!--AEONIUM 4-->
+                        <div class="col">
+                            <div class="marcoProducto">
+
+                                <img src="imagenes/aeonium_kiwi.jpg" class="card-img-top" alt="Aeonium Kiwi">
+
+                                <div class="infoProducto">
+                                    <div class="d-flex flex-nowrap">
+                                        <p>Disponible</p>
+                                        <p class="precioProducto ml-auto">$250</p>                                      
+                                    </div>
+                                    <h4 class="nombreProducto">Aeonium Kiwi</h4>
+                                    <button class="btn-sm botonComprar">Comprar</button>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!--AEONIUM 5-->
+                        <div class="col">
+                            <div class="marcoProducto">
+
+                                <img src="imagenes/aeonium_sunburst.jpg" class="card-img-top" alt="Aeonium Sunburst">
+
+                                <div class="infoProducto">
+                                    <div class="d-flex flex-nowrap">
+                                        <p>Disponible</p>
+                                        <p class="precioProducto ml-auto">$180</p>                                      
+                                    </div>
+                                    <h4 class="nombreProducto">Aeonium Sunburst</h4>
+                                    <button class="btn-sm botonComprar">Comprar</button>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!--AEONIUM 6-->
+                        <div class="col">
+                            <div class="marcoProducto">
+
+                                <img src="imagenes/aeonium_velour.jpg" class="card-img-top" alt="Aeonium Velour">
+
+                                <div class="infoProducto">
+                                    <div class="d-flex flex-nowrap">
+                                        <p>Disponible</p>
+                                        <p class="precioProducto ml-auto">$450</p>                                      
+                                    </div>
+                                    <h4 class="nombreProducto">Aeonium Velour</h4>
+                                    <button class="btn-sm botonComprar">Comprar</button>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!--AEONIUM 7-->
+                        <div class="col">
+                            <div class="marcoProducto">
+
+                                <img src="imagenes/aeonium_mardi_gras.jpg" class="card-img-top"
+                                    alt="Aeonium Mardi Gras">
+
+                                <div class="infoProducto">
+                                    <div class="d-flex flex-nowrap">
+                                        <p>Disponible</p>
+                                        <p class="precioProducto ml-auto">$200</p>                                      
+                                    </div>
+                                    <h4 class="nombreProducto">Aeonium Mardi Gras</h4>
+                                    <button class="btn-sm botonComprar">Comprar</button>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!--------------------------AGAVOIDES------------------------>
+                    <div class="tituloCatalogo mt-5">
+                        <h2 id="agavoides">Agavoides</h2>
+                    </div>
+
+                    <div class="row row-cols-2 row-cols-sm-2 row-cols-lg-3 g-3">
+
+                        <!--AGAVOIDE 1-->
+                        <div class="col">
+                            <div class="marcoProducto">
+
+                                <img src="imagenes/agavoide_ebony.jpg" class="card-img-top" alt="Agavoide Ebony">
+
+                                <div class="infoProducto">
+                                    <div class="d-flex flex-nowrap">
+                                        <p>Disponible</p>
+                                        <p class="precioProducto ml-auto">$350</p>                                      
+                                    </div>
+                                    <h4 class="nombreProducto">Agavoide Ebony</h4>
+                                    <button class="btn-sm botonComprar">Comprar</button>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!--AGAVOIDE 2-->
+                        <div class="col">
+                            <div class="marcoProducto">
+
+                                <img src="imagenes/agavoide_hybrid.jpg" class="card-img-top" alt="Agavoide Hybrid">
+
+                                <div class="infoProducto">
+                                    <div class="d-flex flex-nowrap">
+                                        <p>Disponible</p>
+                                        <p class="precioProducto ml-auto">$420</p>                                      
+                                    </div>
+                                    <h4 class="nombreProducto">Agavoide Hybrid</h4>
+                                    <button class="btn-sm botonComprar">Comprar</button>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!--AGAVOIDE 3-->
+                        <div class="col">
+                            <div class="marcoProducto">
+
+                                <img src="imagenes/agavoide_romeo.jpg" class="card-img-top" alt="Agavoide Romeo">
+
+                                <div class="infoProducto">
+                                    <div class="d-flex flex-nowrap">
+                                        <p>Disponible</p>
+                                        <p class="precioProducto ml-auto">$310</p>                                      
+                                    </div>
+                                    <h4 class="nombreProducto">Agavoide Romeo</h4>
+                                    <button class="btn-sm botonComprar">Comprar</button>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!--AGAVOIDE 4-->
+                        <div class="col">
+                            <div class="marcoProducto">
+
+                                <img src="imagenes/agavoide_sirius.jpg" class="card-img-top" alt="Agavoide Sirius">
+
+                                <div class="infoProducto">
+                                    <div class="d-flex flex-nowrap">
+                                        <p>Disponible</p>
+                                        <p class="precioProducto ml-auto">$360</p>                                      
+                                    </div>
+                                    <h4 class="nombreProducto">Agavoide Sirius</h4>
+                                    <button class="btn-sm botonComprar">Comprar</button>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!--AGAVOIDE 5-->
+                        <div class="col">
+                            <div class="marcoProducto">
+
+                                <img src="imagenes/agavoide_taurus.jpg" class="card-img-top" alt="Agavoide Ebony">
+
+                                <div class="infoProducto">
+                                    <div class="d-flex flex-nowrap">
+                                        <p class="sinStock">Sin Stock</p>
+                                        <p class="precioProducto ml-auto">$400</p>                                      
+                                    </div>
+                                    <h4 class="nombreProducto">Agavoide Taurus</h4>
+                                    <button class="btn-sm botonNoDisponible">Comprar</button>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!--------------------------KALANCHOES------------------------>
+                    <div class="tituloCatalogo mt-5">
+                        <h2 id="kalanchoes">Kalanchoes</h2>
+                    </div>
+
+                    <div class="row row-cols-2 row-cols-sm-2 row-cols-lg-3 g-3">
+
+                        <!--KALANCHOE 1-->
+                        <div class="col">
+                            <div class="marcoProducto">
+
+                                <img src="imagenes/kalanchoe_blossfeldiana.jpg" class="card-img-top"
+                                    alt="Kalanchoe Blossfeldiana">
+
+                                <div class="infoProducto">
+                                    <div class="d-flex flex-nowrap">
+                                        <p>Disponible</p>
+                                        <p class="precioProducto ml-auto">$190</p>                                      
+                                    </div>
+                                    <h4 class="nombreProducto">Kalanchoe Blossfeldiana</h4>
+                                    <button class="btn-sm botonComprar">Comprar</button>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!--KALANCHOE 2-->
+                        <div class="col">
+                            <div class="marcoProducto">
+
+                                <img src="imagenes/kalanchoe_butterflies.jpg" class="card-img-top"
+                                    alt="Kalanchoe Butterflies">
+
+                                <div class="infoProducto">
+                                    <div class="d-flex flex-nowrap">
+                                        <p class="sinStock">Sin Stock</p>
+                                        <p class="precioProducto ml-auto">$415</p>                                      
+                                    </div>
+                                    <h4 class="nombreProducto">Kalanchoe Butterflies</h4>
+                                    <button class="btn-sm botonNoDisponible">Comprar</button>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!--KALANCHOE 3-->
+                        <div class="col">
+                            <div class="marcoProducto">
+
+                                <img src="imagenes/kalanchoe_pinnata.jpg" class="card-img-top" alt="Kalanchoe Pinnata">
+
+                                <div class="infoProducto">
+                                    <div class="d-flex flex-nowrap">
+                                        <p>Disponible</p>
+                                        <p class="precioProducto ml-auto">$400</p>                                      
+                                    </div>
+                                    <h4 class="nombreProducto">Kalanchoe Pinnata</h4>
+                                    <button class="btn-sm botonComprar">Comprar</button>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!--KALANCHOE 4-->
+                        <div class="col">
+                            <div class="marcoProducto">
+
+                                <img src="imagenes/kalanchoe_thyrsiflora.jpg" class="card-img-top"
+                                    alt="Kalanchoe Thyrsiflora">
+
+                                <div class="infoProducto">
+                                    <div class="d-flex flex-nowrap">
+                                        <p>Disponible</p>
+                                        <p class="precioProducto ml-auto">$260</p>                                      
+                                    </div>
+                                    <h4 class="nombreProducto">Kalanchoe Thyrsiflora</h4>
+                                    <button class="btn-sm botonComprar">Comprar</button>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!--KALANCHOE 5-->
+                        <div class="col">
+                            <div class="marcoProducto">
+
+                                <img src="imagenes/kalanchoe_tomentosa.jpg" class="card-img-top"
+                                    alt="Kalanchoe Tomentosa">
+
+                                <div class="infoProducto">
+                                    <div class="d-flex flex-nowrap">
+                                        <p>Disponible</p>
+                                        <p class="precioProducto ml-auto">$200</p>                                      
+                                    </div>
+                                    <h4 class="nombreProducto">Kalanchoe Tomentosa</h4>
+                                    <button class="btn-sm botonComprar">Comprar</button>
+                                </div>
+
+                            </div>
                         </div>
 
                     </div>
                 </div>
-
-                <!--PRODUCTO 5-->
-                <div class="col-lg-4 col-md-4 all dev">
-                    <div class="marcoProducto">
-
-                        <img src="imagenes/sedum 2.jpg" class="card-img-top" alt="Sedum Rowleyanus">
-
-                        <div class="infoProducto">
-                            <p>Disponible</p>
-                            <p class="precioProducto">$200</p>
-                            <h3 class="nombreProducto">Sedum Rowleyanus</h3>
-                            <a class="transformScale" href="">Comprar</a>
-                        </div>
-
-                    </div>
-                </div>
-
-                <!--PRODUCTO 6-->
-                <div class="col-lg-4 col-md-4 all des">
-                    <div class="marcoProducto">
-
-                        <img src="imagenes/cactus 1.jpg" class="card-img-top" alt="Cactus Rebutia">
-
-                        <div class="infoProducto">
-                            <p>Disponible</p>
-                            <p class="precioProducto">$210</p>
-                            <h3 class="nombreProducto">Cactus Rebutia</h3>
-                            <a class="transformScale" href="">Comprar</a>
-                        </div>
-
-                    </div>
-                </div>
-
-                <!--PRODUCTO 7-->
-                <div class="col-lg-4 col-md-4 all des">
-                    <div class="marcoProducto">
-
-                        <img src="imagenes/cactus 3.jpg" class="card-img-top" alt="Cactus Astrophytum">
-
-                        <div class="infoProducto">
-                            <p>Disponible</p>
-                            <p class="precioProducto">$260</p>
-                            <h3 class="nombreProducto">Cactus Astrophytum</h3>
-                            <a class="transformScale" href="">Comprar</a>
-                        </div>
-
-                    </div>
-                </div>
-
-                <!--PRODUCTO 8-->
-                <div class="col-lg-4 col-md-4 all dev">
-                    <div class="marcoProducto">
-
-                        <img src="imagenes/haworthia.jpg" class="card-img-top" alt="Haworthia Attenuata">
-
-                        <div class="infoProducto">
-                            <p class="sinStock">Sin Stock</p>
-                            <p class="precioProducto">$180</p>
-                            <h3 class="nombreProducto">Haworthia Attenuata</h3>
-                            <a class="noDisponible" href="">Comprar</a>
-                        </div>
-
-                    </div>
-                </div>
-
-                <!--PRODUCTO 9-->
-                <div class="col-lg-4 col-md-4 all gra">
-                    <div class="marcoProducto">
-                        <img src="imagenes/crasas 2.jpg" class="card-img-top" alt="Echeveria BrownSugar">
-
-                        <div class="infoProducto">
-
-                            <p>Disponible</p>
-                            <p class="precioProducto">$190</p>
-                            <h3 class="nombreProducto">Echeveria BrownSugar</h3>
-                            <a class="transformScale" href="">Comprar</a>
-
-                        </div>
-
-                    </div>
-                </div>
-
-                <!--PRODUCTO 10-->
-                <div class="col-lg-4 col-md-4 all gra">
-                    <div class="marcoProducto">
-                        <img src="imagenes/kalanchoe 1.jpg" class="card-img-top " alt="Kalanchoe Tomentosa">
-
-                        <div class="infoProducto">
-
-                            <p class="sinStock">Sin Stock</p>
-                            <p class="precioProducto">$180</p>
-                            <h3 class="nombreProducto">Kalanchoe Tomentosa</h3>
-                            <a class="noDisponible" href="">Comprar</a>
-
-                        </div>
-
-                    </div>
-                </div>
-
-                <!--PRODUCTO 11-->
-                <div class="col-lg-4 col-md-4 all dev">
-                    <div class="marcoProducto">
-                        <img src="imagenes/cactus 4.jpg" class="card-img-top" alt="Cactus Opuntia">
-
-                        <div class="infoProducto">
-
-                            <p>Disponible</p>
-                            <p class="precioProducto">$220</p>
-                            <h3 class="nombreProducto">Cactus Opuntia</h3>
-                            <a class="transformScale" href="">Comprar</a>
-
-                        </div>
-
-                    </div>
-                </div>
-
-                <!--PRODUCTO 12-->
-                <div class="col-lg-4 col-md-4 all des">
-                    <div class="marcoProducto">
-                        <img src="imagenes/euphorbia.jpg" class="card-img-top" alt="Euphorbia Trigona">
-
-                        <div class="infoProducto">
-                            <p>Disponible</p>
-                            <p class="precioProducto">$190</p>
-                            <h3 class="nombreProducto">Euphorbia Trigona</h3>
-                            <a class="transformScale" href="">Comprar</a>
-                        </div>
-                    </div>
-                </div>
-
             </div>
-        </section>
+        </div>
 
     </main>
 
     <!--FOOTER-->
-    <footer class="container-fluid ps-5 py-5">
-        <p class="row">© Copyright 2021. Todos los derechos reservados | Karen Ruiz </p>
+    <footer>
+        <div class="container pt-4">
+            <div class="row">
+                <div class="col-md-4 col-4 mt-4">
+                    <h5>Sucuworld</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="index.html" class="nav-link p-0 link-dark">Inicio</a></li>
+                        <li class="nav-item mb-2"><a href="catalogo.html" class="nav-link p-0 link-dark">Catalogo</a>
+                        </li>
+                        <li class="nav-item mb-2"><a href="blog.html" class="nav-link p-0 link-dark">Blog</a></li>
+                        <li class="nav-item mb-2"><a href="nosotros.html" class="nav-link p-0 link-dark">Nosotros</a>
+                        </li>
+                        <li class="nav-item mb-2"><a href="contacto.html" class="nav-link p-0 link-dark">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4 col-6 mt-4">
+                    <h5>Contáctanos</h5>
+                    <a href="mailto:contacto@sucuworld.com" class="link-dark">contacto@sucuworld.com</a>
+
+                    <h5 class="mt-4">Seguinos en:</h5>
+                    <ul class="nav ml-auto redes">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link link-dark px-2 transformScale">
+                                <i class="bi bi-facebook" role="img" aria-label="Facebook"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link link-dark px-2 transformScale">
+                                <i class="bi bi-instagram" role="img" aria-label="Instagram"></i>
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+
+                <div class="col-md-4 mt-4">
+                    <h5>Suscríbete al newsletter</h5>
+                    <p>Recibí las ultimas entradas al catálogo y enterate de las nuevas notas de nuestro Blog.</p>
+                    <div class="d-flex w-100 gap-2">
+                        <label for="newsletter" class="visually-hidden">Correo electrónico</label>
+                        <input type="email" id="email" class="form-control" placeholder="Email">
+                        <button class="btn botonTurquesaLight">Suscribirse</button>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="container justify-content-between py-3 mt-4 border-top">
+                <p class="text-center text-muted">© 2021 Sucuworld. Todos los derechos reservados | Karen Ruiz </p>
+            </div>
+
+        </div>
     </footer>
 
     <!--CDN SCRIPT DE JAVASCRIPT-->

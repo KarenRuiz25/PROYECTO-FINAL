@@ -1,261 +1,535 @@
 @import "variables/colores";
 
-*{ 
-    margin: 0;
-    padding: 0;
-    font-size: 1.2rem;    
-    font-family: 'Nunito Sans', sans-serif;
-    box-sizing: border-box;
-}
-section{
+/*--------------------------------ESTILOS GENERALES--------------------------------*/
+section {
     padding: 2% 10%;
 }
 
-/*-------------------------HEADER--------------------------------*/
-header{ 
-    background: $color-header;    
-    h1{    
+.transformScale:hover {
+    transform: scale(1.1);
+    transition: all .5s;    
+}
+
+
+.botonTurquesaLight{    
+    background-color: white;
+    color: $color-header;
+    border: 2px solid $color-header;
+    transition: all 0.3s;
+}
+
+.botonTraslucido{    
+    background-color: $color-blancoTransparente;
+    font-weight: 500;
+    color: black;
+    transition: all 0.3s; 
+}
+
+.botonTurquesaLight:hover{
+    background-color: $color-header;
+    color: white;
+    transition: all 0.3s;
+}
+
+.botonVerde {
+    background-color: $color-verde;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 12px 30px;
+    border-radius: 30px;
+    display: inline-block;    
+    margin-bottom: 50px;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.seccionFondoGris {
+    background-color: $color-fondoGris;
+    margin-top: 50px;
+    // padding-bottom: 50px;
+}
+
+.tituloSeccion {
+    text-align: center;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid $color-grisClaro;
+    font-family: 'Nunito Sans', sans-serif;
+
+    h2 {
+        font-size: 1.8rem;
+        font-weight: 600;
+        margin-bottom: 15px;
+        margin-top: 50px;
+    }
+}
+
+
+/*---------------------------------HEADER--------------------------------*/
+header {
+    background: $color-header;
+    font-size: 1.4rem;
+    font-family: 'Nunito Sans', sans-serif;
+
+    .ubicacion{
+        font-size: 1.2rem;        
+        text-decoration: none;
+        padding-top: 10px;
+    }
+
+    h1 {
         color: $color-h1;
+        color: white;
         text-align: left;
         font-family: 'Alice', serif;
     }
-    .transformScale:hover{
-        color:white;       
+
+    .transformScale:hover {
+        color: white;
     }
 }
 
-/*-------------------------FOOTER--------------------------------*/
-footer{
+/*--------------------------------FOOTER--------------------------------*/
+footer {
     background-color: $color-footer;
+    background-color: #F9F9F9;
+
+    .link-dark:hover{
+        color: $color-header;
+    }    
+    .redes{
+        font-size: 1.4rem;
+    }
 }
 
-/*-----------------FORMATO DE PAGINA DE CATALOGO-----------------*/
+/*----------------------FORMATO DE PAGINA DE INICIO-----------------------*/
 
-.transformScale:hover{
-    transform: scale(1.3); 
-    transition: all .5s;
-    z-index: 1;
+.carousel {
+    h3 {
+        font-size: 1.8rem;
+        font-family: 'Nunito Sans', sans-serif;
+        font-weight: bold;
+    }
+
+    p {
+        font-size: 1.3rem;
+        
+
+    }
 }
 
-.marcoProducto{ 
-	border: 1px solid $color-grisClaro;
-	margin-bottom: 30px;
-        img {
+.seccionAsesoramiento{
+
+    .recuadroIcono {    
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 3rem;
+    height: 3rem;
+    font-size: 1.5rem;
+    border-radius: .75rem;
+    background-color: white;
+     
+        .bi {
+            vertical-align: auto;
+            color: $color-verde;        
+        }
+    }
+
+    h3{
+        font-family: 'Nunito Sans', sans-serif;
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+    p{
+        font-size: 1.1rem;
+    }
+}
+
+.tarjetasEspecies{
+    height: 300px;
+    color: white;
+    border-radius: 10px;
+    h2{        
+        font-family: 'Nunito Sans', sans-serif;
+        font-weight: 800;
+        text-shadow: black 1px 2px;
+        
+    }
+    a{
+        font-size: .8rem;
+    }
+    a:hover{        
+        border: solid white 2px;
+        transition: all 0.3s;
+    }
+}
+
+
+  
+  
+
+/*---------------------FORMATO DE PAGINA DE CATALOGO----------------------*/
+
+.menuCatalogo {
+    font-size: 1.1rem;
+    a {
+        text-decoration: none;
+        color: black;
+    }
+    .especies:hover {
+        color: $color-header;
+        text-decoration: underline;
+        font-weight: 500;
+    }
+}
+
+.tituloCatalogo {
+    text-align: center;
+    margin-bottom: 25px;
+    border-bottom: 1px solid $color-grisClaro;
+    font-family: 'Nunito Sans', sans-serif;
+
+    h2 {
+        font-size: 1.8rem;
+        font-weight: 600;       
+        margin-bottom: 10px;
+        color: $color-verde;
+        
+    }
+}
+
+.marcoProducto {
+    border: 1px solid $color-grisClaro;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+
+    img {
         width: 100%;
         overflow: hidden;
     }
 
-    .infoProducto{  
-        padding: 30px;
+    .infoProducto {
+        padding: 5%;
         position: relative;
-        p{
+
+        p {
             font-size: 17px;
             color: $color-azul;
-            margin-bottom: 20px;
+            margin-bottom: 10px;
         }
-        .precioProducto{
-            position: absolute;
-            top: 30px;
-            right: 30px;
+
+        .precioProducto {
+            // position: absolute;
+            // top: 20px;
+            // right: 30px;
+            margin-bottom: 15px;
             font-size: 18px;
             color: black;
+            // text-align: end;
+            
         }
-        .nombreProducto{
+
+        .nombreProducto {
             margin-bottom: 30px;
-            font-size: 25px;
+            font-size: 1.1rem;
         }
-        a{
+
+        .botonComprar {
             position: absolute;
-            right: 30px;
-            bottom: 30px;
-            font-size: 18px;
+            right: 20px;
+            bottom: -5px;
+
+            font-size: 1rem;
+            background-color: white;
             color: $color-verde;
-            text-decoration: none;    
+            font-weight: 450;
+            text-decoration: none;
+            border: 1px solid $color-verde;
+            margin-top: 20px; 
         }
-        .noDisponible{
-            color: gray;
-        }
-        .sinStock{
+
+        .botonComprar:hover{
+            transform: scale(1.1);
+            transition: all .5s;
+            background-color: $color-verde;
+            color: white;
+        }      
+
+        .sinStock {
             color: $color-rojo;
         }
+
+        .botonNoDisponible{
+            position: absolute;
+            right: 20px;
+            bottom: -5px;
+
+            font-size: 1rem;
+            background-color: white;
+            color: grey;
+            font-weight: 450;
+            text-decoration: none;
+            border: 1px solid $color-grisClaro;
+            margin-top: 20px;                        
+            cursor: default;         
+        }
+
     }
 }
 
-/*-----------------FORMATO DE PAGINA BLOG------------------------*/
-.notasBlog{
+/*------------------------FORMATO DE PAGINA BLOG------------------------*/
+.notasBlog {
     margin-top: 30px;
-    margin-bottom: 30px;
-    padding: 2%;
+    margin-bottom: 30px;    
+
+    img {
+        width: 100%;
+    }
+    span{
+        font-size: 1.1rem;
+    }
+    h2 {
+        font-size: 1.8rem;
+        font-weight: 600;
+        margin: 20px 0;
+        font-family: 'Nunito Sans', sans-serif;
+    }
+    p{
+        font-weight: 1.1rem;
+    }
+    a {
+        color: $color-verde;
+    }
+    a:hover{
+        font-weight: 600;
+    }
+}
+
+.contenidoNotas{
+    margin-left: 30px;
+    margin-right: 30px;    
+
     img{
         width: 100%;
     }
-    h2{
-        font-size: 30px;
+
+    p{
+        margin-top: 30px;
+        font-size: 1.1rem;
+    }
+    h3{
+        font-size: 1.5rem;
+        font-family: 'Nunito Sans', sans-serif;
         font-weight: 600;
-        margin: 20px 0;
+        margin-top: 40px;
+        color: $color-header;
     }
-    a{
-        color: $color-verde;
+
+    .stickyDerecho{
+        h4{
+            font-size: 1.3rem;
+        }
+        .botonEtiqueta{
+            border: none;
+            border-radius: 20px;
+        }
+        .botonEtiqueta:hover{
+            background-color: $color-blancoTransparente;
+            color: $color-verde;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+            font-family: 'Nunito Sans', sans-serif;
+            font-size: 1.2rem;
+        }
+        a:hover{
+            font-weight: 600;
+        }
+        p{
+           margin-top: 0px;
+           font-size: 1rem;
+           color: $color-grisOscuro;
+        }
+        .volver{
+            font-size: 1.1rem;
+            text-decoration: underline;
+            color: $color-verde;
+            
+        }
     }
+
+}
+
+.comentarios{
+    border: solid 1px $color-grisClaro;
+    border-radius: 10px;
+    margin-bottom: 50px;
 }
 
 
-/*-----------------FORMATO DE PAGINA DE NOSOTROS-----------------*/
+/*-----------------------FORMATO DE PAGINA DE NOSOTROS--------------------*/
 
 .seccionNosotros {
-	margin-top: 80px;    
+    margin-top: 50px;
 
     .imagenDerecha img {
         width: 100%;
         overflow: hidden;
     }
 
-    .infoIzquierda{
-        span{
-        text-transform: uppercase;
-        font-size: 15px;
-        color: $color-grisOscuro;
-        letter-spacing: 1px;
-        margin-bottom: 10px;
-        display: block;
+    .infoIzquierda {
+        span {
+            text-transform: uppercase;
+            font-size: 1rem;
+            color: $color-grisOscuro;
+            letter-spacing: 1px;
+            margin-bottom: 10px;
+            display: block;
         }
+
         h2 {
-            font-size: 36px;
+            font-size: 2.2rem;
             font-weight: 600;
             margin-bottom: 35px;
+            font-family: 'Alice', serif;
         }
+
         em {
             font-style: normal;
             color: $color-verde;
-        }  
-        a:hover{
-            background-color: white;
-            color: $color-verde;
-            border: solid 1px $color-verde;
-            text-decoration: none;
-        }     
+            font-family: 'Nunito Sans', sans-serif;
+            font-size: 1.6rem;
+        }
+
+        p{
+            font-size: 1.1rem;
+        }
+
+        a:hover {        
+            color: white;
+        }
+
     }
 }
 
-.botonVerde{
-    background-color: $color-verde;
-    color: white;
-    font-size: 13px;
-    text-transform: uppercase;
-    font-weight: 700;
-    padding: 12px 30px;
-    border-radius: 30px;
-    display: inline-block;
-    transition: all 0.3s;
-    margin-bottom: 50px;
-    text-decoration: none;
-}
-
-.seccionFondoGris{
-	background-color: $color-fondoGris;
-	margin-top: 100px;	
-	padding-bottom: 100px;
-}
-.tituloEquipo{
-	text-align: center;
-	margin: 80px 0;
-    h2{
-	font-size: 36px;
-	font-weight: 600;
-    }
-}
-.miembroEquipo{
-    img{
-	width: 100%;
-	overflow: hidden;
-    margin-bottom: 20px;
+.miembroEquipo {
+    img {
+        width: 100%;
+        overflow: hidden;
+        margin-bottom: 20px;
 
     }
-    .infoEquipo{
+
+    .infoEquipo {
         background-color: white;
         padding: 30px;
-        h4{
-            font-size: 25px;
-            font-weight: 700;
+
+        h4 {
+            font-size: 1.4rem;
+            font-weight: 600;
             letter-spacing: 0.25px;
-            margin-bottom: 10px;
+            margin-bottom: 0;
+            padding-top: 10px;
         }
-        span{
+
+        .redes{
+            font-size: 1.2rem;
+        }
+
+        span {
             color: $color-verde;
             font-weight: 600;
-            font-size: 20px;
+            font-size: 1.2rem;
             display: block;
             margin-bottom: 15px;
         }
-        p{
+
+        p {
             margin-bottom: 20px;
+            font-size: 1.1rem;
         }
     }
 }
 
-/*-----------------FORMATO DE PAGINA DE CONTACTO-----------------*/
-.contactoInfo{
-	margin-top: 50px;
+/*---------------------FORMATO DE PAGINA DE CONTACTO---------------------*/
+.contactoInfo {
+    margin-top: 50px;
 
-    .contactoItem{
-        padding: 60px 30px;
+    .contactoItem {
+        padding: 40px 30px;
         margin-bottom: 30px;
         background-color: $color-fondoGris;
         text-align: center;
+
         i{
             color: $color-verde;
             font-size: 48px;
             margin-bottom: 40px;
         }
-        h4{
-            font-size: 20px;
-            font-weight: 700;
-            letter-spacing: 0.25px;
+
+        h4 {
+            font-size: 1.4rem;
+            font-weight: 600;            
             margin-bottom: 15px;
         }
-        p{
+
+        p {
             margin-bottom: 20px;
+            font-size: 1.1rem;
         }
-        a{
+
+        a {
             font-weight: 600;
             color: $color-verde;
             font-size: 15px;
-        }         
-    }   
-}
-
-.tituloSeccion{
-	text-align: center;
-	margin-bottom: 40px;
-	border-bottom: 1px solid $color-grisClaro;
-    h2{
-        font-size: 28px;
-        font-weight: 600;   
-        margin-bottom: 15px;
-        margin-top: 50px;
+        }
     }
 }
 
-form{
+
+
+form {
     width: 70%;
     margin: auto;
-    input:hover{    
-        border: solid 1px $color-grisOscuro;
-        color: $color-grisOscuro;
-    }
-    .botonVerde{
-        border: none;
-    }
-}
-.form-group{
-    label{
+    font-size: 1.1rem;           
+    label {
         color: $color-verde;
-    }    
+    }   
+       
 }
+
+
+.botonComprar {
+    position: absolute;
+    right: 25px;
+    bottom: 1px;
+
+    font-size: 1rem;
+    background-color: white;
+    color: $color-verde;
+    font-weight: 450;
+    text-decoration: none;
+    border: 1px solid $color-verde;
+    margin-top: 20px;
+    transition: all 0.3s;
+}
+
+.botonComprar:hover{
+    transform: scale(1.1);
+    transition: all .5s;
+    
+}
+
 
 /*
     ¡¡¡PARA RETOMAR LA COMPILACION LUEGO DE CERRAR EL PROYECTO!!!
      1- Entrar a la consola y posicionarme en la carpeta de mi proyecto con el comando cd
+        C:\Users\Karen\Desktop\Desarrollo Web - CoderHouse\•ROUND DOS•\PROYECTO FINAL - FINAL
+
      2- Ejecutar el comando: npm run watch-css. Y listo, sigo programando con SASS 
 
 */
